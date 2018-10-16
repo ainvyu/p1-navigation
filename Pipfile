@@ -1,0 +1,14 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+tensorflow = "==1.7.1"
+unityagents = "==0.4.0"
+torch = "==0.4.1"
+
+[dev-packages]
+
+[requires]
+python_version = "3.6"

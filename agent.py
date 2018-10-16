@@ -44,7 +44,7 @@ class Agent():
             self.optimizer = optim.Adam(self.qnetwork_local.parameters(), lr=LR)
 
         if checkpoint_filename:
-            weights = torch.load(checkpoint_filename)
+            weights = torch.load(checkpoint_filename, map_location=device)
             self.qnetwork_local.load_state_dict(weights)
             self.qnetwork_target.load_state_dict(weights)
         
